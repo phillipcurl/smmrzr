@@ -13,45 +13,45 @@
   </section>
 </template>
 <script>
-import axios from '~/plugins/axios'
+import axios from '~/plugins/axios';
 
 export default {
   name: 'id',
-  data () {
+  data() {
     return {
       user: {}
-    }
+    };
   },
-  async asyncData (context) {
+  async asyncData(context) {
     try {
-      const { data } = await axios.get('/api/users/' + context.params.id)
-      return { user: data }
+      const { data } = await axios.get('/api/users/' + context.params.id);
+      return { user: data };
     } catch (e) {
-      context.error({ statusCode: e.response.status, message: e.response.data })
+      context.error({
+        statusCode: e.response.status,
+        message: e.response.data
+      });
     }
   },
-  head () {
+  head() {
     return {
       title: `User: ${this.user.name}`
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
-.title
-{
+.title {
   margin-top: 30px;
 }
-.info
-{
+.info {
   font-weight: 300;
   color: #9aabb1;
   margin: 0;
   margin-top: 10px;
 }
-.button
-{
+.button {
   margin-top: 30px;
 }
 </style>

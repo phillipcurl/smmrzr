@@ -10,7 +10,11 @@ module.exports = {
       { hid: 'description', meta: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css'
+      }
     ]
   },
   /*
@@ -23,4 +27,4 @@ module.exports = {
   build: {
     vendor: ['axios']
   }
-}
+};
