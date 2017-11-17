@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-blue fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l" style="z-index: 5;">
+  <header class="bg-blue fixed w-100 pv3 pv4-ns ph3 ph4-m ph5-l" style="z-index: 5;">
     <nav class="f6 fw6 ttu tracked">
       <nuxt-link class="link dim white dib mr3" to="/" exact title="Home">Home</nuxt-link>
       <nuxt-link class="link dim white dib mr3" to="/api" exact title="About">API</nuxt-link>

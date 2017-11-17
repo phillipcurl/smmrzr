@@ -1,7 +1,9 @@
 <template>
   <div>
     <app-navigation/>
-    <nuxt/>
+    <main>
+      <nuxt/>      
+    </main>
     <app-footer/>
   </div>
 </template>
@@ -19,5 +21,7 @@ export default {
 </script>
 
 <style>
-
+main {
+  padding-top: 80px;
+}
 </style>
